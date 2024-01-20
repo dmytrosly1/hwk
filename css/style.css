@@ -1,23 +1,17 @@
-.home {
-  width: 200px;
-  background-color: #aaa;
-  padding: 10px 50px 10px 50px;
-  border-radius: 10px;
-  text-decoration: none;
-  position: relative;
-  text-align: center;
-  align-items: center;
-  left: 680px;
-  color: white;
-  top: 40px;
+img {
+  max-width: 1000px;
+  height: 400px;
 }
 
-.ons {
-  text-align: center;
-  font-size: 24px;
+.container {
+  margin: 20px;
+  justify-content: space-around;
 }
 
-.home:hover {
-  background-color: #c1c1c1;
-  color: #818181;
+p {
+  font-size: 18px;
+}
+
+a {
+  color: blue;
 }
