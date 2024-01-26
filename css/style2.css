@@ -1,33 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-img {
-  width: 500px;
-  height: 300px;
+body {
+  font-family: "Tilt Neon", sans-serif;
+  background-color: #e8e8e8;
 }
 
-.img {
-  margin: 10px 13px;
-}
-
-.homecl {
-  width: 200px;
-  background-color: #aaa;
-  padding: 10px 50px 10px 50px;
-  border-radius: 10px;
-  text-decoration: none;
-  position: relative;
+.header {
+  background-color: rgb(216, 0, 0);
   text-align: center;
-  align-items: center;
-  left: 680px;
-  color: white;
-  top: 40px;
+  overflow: hidden;
+  width: 100%;
 }
 
-.homecl:hover {
-  background-color: #c1c1c1;
-  color: #818181;
+.header h2,
+.header a {
+  display: inline-block;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.header h2:hover,
+.header a:hover {
+  color: #fff;
+}
+
+.header h2 {
+  color: rgb(255, 255, 255);
+  float: left;
+  padding-left: 50px;
+}
+
+.header a {
+  text-decoration: none;
+  color: rgb(227, 226, 226);
+  font-size: 25px;
+  float: right;
+  padding-right: 50px;
+}
+
+.container {
+  font-family: "Tilt Neon", sans-serif;
+  max-width: 350px;
+  background-color: rgb(202, 202, 202);
+  margin: 0 auto;
+  margin-top: 65px;
+  height: 370px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.for-all-labels {
+  font-size: 26px;
+  padding-left: 10px;
+  font-family: "Lato", sans-serif;
+}
+
+.for-all-inputs {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: block;
+}
+
+.for-all-inputs:active {
+  border: none;
+  background-color: rgb(227, 226, 226);
+}
+
+.check {
+  font-size: 20px;
+  display: block;
+  margin-top: 0px;
+}
+
+span {
+  color: rgb(8, 8, 106);
+  text-decoration: underline;
+}
+
+.btn {
+  font-family: "Rubik", sans-serif;
+  margin-left: 44px;
+  margin-top: 7px;
+  width: 70%;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  font-size: 19.5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(227, 226, 226);
+  transition: 0.2s;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(202, 202, 202);
+  padding: 7px 0;
+}
+
+.signin {
+  background-color: #fff;
+  font-family: "Rubik", sans-serif;
+  cursor: pointer;
+  font-size: 19.5px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 26px;
+  width: 100px;
+  width: 110%;
+  text-align: center;
+  font-size: 26px;
+  margin-left: -14px;
+}
+
+.signin a {
+  text-decoration: none;
+}
+
+.signin:hover {
+  background-color: rgb(227, 226, 226);
+  transition: 0.2s;
 }
