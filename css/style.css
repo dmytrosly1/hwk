@@ -1,23 +1,81 @@
-.home {
-  width: 200px;
-  background-color: #aaa;
-  padding: 10px 50px 10px 50px;
-  border-radius: 10px;
-  text-decoration: none;
-  position: relative;
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  padding: 20px 0;
+  padding-left: 160px;
   align-items: center;
-  left: 680px;
+  background-color: #f9f7e8;
+}
+
+.header-title {
+  font-family: "Courgette";
+  padding-right: 50px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.header span {
+  color: #62bfad;
+}
+
+.container-nav {
+  font-family: Lato;
+  display: flex;
+  width: 13%;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.title {
+  width: 100%;
+  font-family: "Limelight-Regular";
+  font-size: 48px;
+  background-color: #d52047;
   color: white;
-  top: 40px;
-}
-
-.ons {
+  display: flex;
   text-align: center;
-  font-size: 24px;
+  justify-content: center;
+  padding: 198px;
 }
 
-.home:hover {
-  background-color: #c1c1c1;
-  color: #818181;
+.footer {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f7e8;
+  font-family: Lato;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.media {
+  display: flex;
+  width: 7%;
+  cursor: pointer;
+  justify-content: space-between;
+  font-size: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+
+.twit {
+  color: #d52047;
+}
+
+.footer span {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
