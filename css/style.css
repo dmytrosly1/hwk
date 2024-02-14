@@ -1,25 +1,23 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #e0e0e0;
+  background-color: #dbdbdb;
 }
-
-/* First Section */
 
 .container {
   background-color: #f3f5f6;
-  max-width: 1440px;
+  width: 1440px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 50px;
   border-radius: 20px;
 }
 
 .container-main {
-  max-width: 1180px;
+  width: 1180px;
   margin: 0 auto;
   padding: 64px 0;
   display: flex;
@@ -27,95 +25,282 @@ body {
 
 .first-part {
   display: flex;
-  flex-grow: 1;
 }
 
 .text {
-  max-width: 310px;
-  padding-top: 48px;
+  width: 390px;
+  position: relative;
+  float: left;
+  padding-top: 60px;
   z-index: 2;
 }
 
 .text .title {
   width: 390px;
   font-size: 32px;
-  line-height: 38.4px;
   font-family: "Inter-Bold";
   padding-bottom: 32px;
+  line-height: 38.4px;
 }
 
 .text .creator {
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 18px;
   font-family: "Inter-Regular";
   padding-bottom: 8px;
+  line-height: 28px;
 }
 
 .text .job {
+  font-size: 12px;
   color: #3c3c43d9;
-  font-size: 14px;
-  line-height: 16.8px;
   font-family: "Inter-Medium";
+  line-height: 16.8px;
 }
 
-.image .man {
-  max-width: 100%;
-  display: flex;
+.image {
+  position: relative;
+  margin-left: -80px;
+}
+
+.second-part {
   position: relative;
 }
 
 .img {
   display: flex;
-}
-
-.second-part {
-  /* max-width: 732px; */
-  position: relative;
+  margin-left: 30px;
 }
 
 .confident {
-  position: absolute;
-  left: -243px;
+  position: relative;
 }
 
 .brutal {
-  position: absolute;
-  margin-left: 72px;
+  padding-left: 30px;
+  position: relative;
 }
 
 .play {
   position: relative;
-  left: 333px;
-  top: 132px;
+  left: 335px;
+  top: 123px;
   cursor: pointer;
 }
 
 .arrowleft {
-  position: relative;
-  top: 305px;
-  left: -69px;
+  position: absolute;
+  top: 306px;
+  left: 208px;
   background-color: #f3f5f6;
-  padding: 45.9px 40px;
+  padding: 46px 40px;
   cursor: pointer;
 }
 
 .arrowright {
-  position: relative;
-  top: 305px;
-  left: -40px;
   background-color: #f3f5f6;
-  padding: 45.9px 40px;
+  padding: 46px 40px;
   cursor: pointer;
+  position: absolute;
+  top: 306px;
+  left: 344px;
 }
 
 .hidden {
   display: none;
 }
 
-/* Second Section */
+@media screen and (max-width: 900px) {
+  .container {
+    width: 769px;
+  }
 
-.hidden {
-  display: none;
+  .container-main {
+    width: 721px;
+    padding: 48px 0;
+    margin: 0 auto;
+  }
+
+  .image .man {
+    width: 273px;
+    position: relative;
+    left: -90px;
+  }
+
+  .confident {
+    width: 208px;
+    position: absolute;
+    left: -67px;
+  }
+
+  .play {
+    display: none;
+  }
+
+  .play2 {
+    display: block;
+    position: relative;
+    left: 237px;
+    top: 60px;
+    cursor: pointer;
+  }
+
+  .text .title {
+    width: 280px;
+    font-size: 24px;
+    line-height: 28.8px;
+    padding-bottom: 24px;
+  }
+
+  .text .creator {
+    font-size: 18px;
+    width: 280px;
+    line-height: 25.2px;
+    padding-bottom: 6px;
+  }
+
+  .text .job {
+    font-size: 12px;
+    line-height: 16.8px;
+    color: #3c3c43d9;
+    width: 280px;
+  }
+
+  .arrowleft {
+    display: none;
+  }
+
+  .arrowright {
+    display: none;
+  }
+
+  .smallleft {
+    display: block;
+    position: absolute;
+    left: -50px;
+    top: 220px;
+    cursor: pointer;
+  }
+
+  .smallright {
+    display: block;
+    position: absolute;
+    left: 45px;
+    top: 220px;
+    cursor: pointer;
+  }
+
+  .brutal {
+    display: none;
+  }
 }
 
-/* Third Section */
+@media screen and (max-width: 400px) {
+  .container {
+    max-width: 375px;
+    width: 100%;
+    height: 710px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .container-main {
+    max-width: 343px;
+    padding: 32px 0;
+    margin: 0 auto;
+  }
+
+  .text {
+    /* width: 296px; */
+    color: white;
+    padding-top: 24px;
+    padding-left: 23px;
+    position: relative;
+  }
+
+  .text .title {
+    width: 190px;
+    font-size: 18px;
+    line-height: 21.6px;
+    padding-bottom: 16px;
+  }
+
+  .text .creator {
+    font-size: 14px;
+    width: 190px;
+    line-height: 16.8px;
+    padding-bottom: 4px;
+  }
+
+  .text .job {
+    font-size: 12px;
+    line-height: 16.8px;
+    color: #ffffff;
+    width: 190px;
+  }
+
+  .image {
+    height: 428px;
+  }
+
+  .image .man {
+    position: absolute;
+    width: 342.99px;
+    height: 100%;
+    object-fit: cover;
+    left: -310px;
+    height: 100%;
+  }
+  .confident {
+    position: absolute;
+    width: 166.5px;
+    height: 208.1px;
+    left: -310px;
+    top: 440px;
+  }
+
+  .brutal {
+    display: flex;
+    position: absolute;
+    width: 166.5px;
+    height: 208.1px;
+    left: -133px;
+    top: 440px;
+  }
+  .smallleft {
+    display: none;
+  }
+  .smallright {
+    display: none;
+  }
+
+  .phoneleft {
+    display: block;
+    position: absolute;
+    top: 624px;
+    left: -190px;
+    cursor: pointer;
+  }
+
+  .phoneright {
+    display: block;
+    position: absolute;
+    top: 624px;
+    left: -134.5px;
+    cursor: pointer;
+  }
+
+  .play2 {
+    display: none;
+  }
+
+  .play3 {
+    position: relative;
+    display: block;
+    top: 207px;
+    left: -2px;
+    cursor: pointer;
+  }
+}
