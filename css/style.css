@@ -264,9 +264,10 @@ body {
   .brutal {
     display: flex;
     position: absolute;
-    width: 166.5px;
+    object-fit: cover;
+    width: 195.5px;
     height: 208.1px;
-    left: -133px;
+    left: -162px;
     top: 440px;
   }
   .smallleft {
@@ -288,7 +289,7 @@ body {
     display: block;
     position: absolute;
     top: 624px;
-    left: -134.5px;
+    left: -134px;
     cursor: pointer;
   }
 
