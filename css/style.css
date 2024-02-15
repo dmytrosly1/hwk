@@ -10,14 +10,14 @@ body {
 
 .container {
   background-color: #f3f5f6;
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   margin-top: 50px;
   border-radius: 20px;
 }
 
 .container-main {
-  width: 1180px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 64px 0;
   display: flex;
@@ -71,11 +71,26 @@ body {
   margin-left: 30px;
 }
 
+.confident-img {
+  max-width: 100%;
+}
+
+.brutal-img {
+  max-width: 100%;
+}
+
+.img-two {
+  display: flex;
+  max-width: 602px;
+}
+
 .confident {
+  max-width: 100%;
   position: relative;
 }
 
 .brutal {
+  max-width: 100%;
   padding-left: 30px;
   position: relative;
 }
