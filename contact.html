@@ -8,11 +8,11 @@
       href="./assets/bootstrap-5.3.2/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
+    <title>Contact</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-secondary">
         <div class="container">
           <a class="navbar-brand" href="index.html">Home</a>
           <button
@@ -57,9 +57,6 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
             </ul>
             <form class="d-flex" role="search">
               <input
@@ -76,7 +73,174 @@
         </div>
       </nav>
     </header>
-    <footer class="bg-body-tertiary">
+    <main>
+      <section class="bg-body py-5">
+        <div class="container px-5">
+          <div class="text" style="width: 700px">
+            <div class="main-text fs-1 fst-italic fw-semibold lh-1">
+              <div class="pb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </div>
+              <div class="secondary-text fs-6 fw-light lh-base">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Libero, corrupti lorem ipsum dolor sit amet. Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Libero, corrupti lorem
+                ipsum dolor sit amet.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-body-tertiary py-5">
+        <div class="container p-5">
+          <div
+            class="container-address bg-body-secondary p-5 rounded"
+            style="width: 700px"
+          >
+            <div class="main-address fw-bold fs-3 pb-3">Billing address</div>
+            <div class="first-dates pb-3">
+              <div class="d-flex justify-content-between">
+                <div class="first-name">
+                  <label class="pb-2">First name</label><br />
+                  <input
+                    type="text"
+                    class="rounded p-2 border-dark-subtle"
+                    style="width: 290px"
+                  />
+                </div>
+                <div class="second-name pb-3">
+                  <label class="pb-2">Last name</label><br />
+                  <input
+                    type="text"
+                    class="rounded p-2 border-dark-subtle"
+                    style="width: 290px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="username pb-3">
+              <label class="pb-2">Username</label>
+              <input
+                type="text"
+                class="p-2 border-dark-subtle rounded"
+                style="width: 600px"
+                placeholder="Username"
+              />
+            </div>
+            <div class="email pb-3">
+              <label class="pb-2"
+                >Email <span class="text-secondary">(Optional)</span></label
+              >
+              <input
+                type="text"
+                class="rounded p-2 border-dark-subtle"
+                style="width: 600px"
+                placeholder="you@example.com"
+              />
+            </div>
+            <div class="address pb-3">
+              <label class="pb-2">Address</label>
+              <input
+                type="text"
+                class="rounded p-2 border-dark-subtle"
+                style="width: 600px"
+                placeholder="1234 Main St"
+              />
+            </div>
+            <div class="address-2 pb-3">
+              <label class="pb-2"
+                >Address 2
+                <span class="text-secondary"> (Optional)</span></label
+              >
+              <input
+                type="text"
+                class="rounded p-2 border-dark-subtle"
+                style="width: 600px"
+                placeholder="Apartment or suite"
+              />
+            </div>
+            <div class="place pb-3 d-flex justify-content-between">
+              <div class="country">
+                <label class="pb-2">Country</label><br />
+                <div class="dropdown">
+                  <button
+                    class="btn dropdown-toggle rounded p-2 border-dark-subtle d-flex justify-content-between align-items-center"
+                    type="button"
+                    style="width: 290px"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Choose...
+                  </button>
+
+                  <ul class="dropdown-menu text-center" style="width: 290px">
+                    <li>
+                      <a class="dropdown-item" href="#">Ukraine</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Usa</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">UK</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Switzerland</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Sweden</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="state">
+                <label class="pb-2">State</label>
+                <div class="dropdown">
+                  <button
+                    class="btn dropdown-toggle rounded p-2 border-dark-subtle d-flex justify-content-between align-items-center"
+                    type="button"
+                    style="width: 290px"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Choose...
+                  </button>
+                  <ul class="dropdown-menu text-center" style="width: 290px">
+                    <li><a class="dropdown-item" href="#">Ukraine</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Usa</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">UK</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Switzerland</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Sweden</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="two-checkboxes border-top border-bottom border-secondary p-3"
+            >
+              <input type="checkbox" id="lorem1" />
+              <label for="lorem1"
+                >Lorem ipsum dolor sit amet, consectetur adipisicing.</label
+              >
+              <br />
+              <input type="checkbox" id="lorem2" />
+              <label for="lorem2"
+                >Lorem ipsum dolor sit amet, consectetur adipisicing.</label
+              >
+            </div>
+            <button type="button" class="btn btn-success mt-5">Submit</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-body-secondary">
       <div class="container justify-content-between d-flex">
         <div class="footer-text py-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
