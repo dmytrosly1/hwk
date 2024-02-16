@@ -10,14 +10,14 @@ body {
 
 .container {
   background-color: #f3f5f6;
-  max-width: 1440px;
+  width: 1440px;
   margin: 0 auto;
   margin-top: 50px;
   border-radius: 20px;
 }
 
 .container-main {
-  max-width: 1180px;
+  width: 1180px;
   margin: 0 auto;
   padding: 64px 0;
   display: flex;
@@ -85,12 +85,10 @@ body {
 }
 
 .confident {
-  max-width: 100%;
   position: relative;
 }
 
 .brutal {
-  max-width: 100%;
   padding-left: 30px;
   position: relative;
 }
