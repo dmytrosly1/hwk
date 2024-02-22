@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+}
+
+.header {
+  background-color: #eeeff1;
+}
+.header nav {
+  padding-top: 4.938rem;
+  font-size: 1rem;
+  max-width: 646px;
+  letter-spacing: 1px;
+  padding-bottom: 9.438rem;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.641rem;
+  text-transform: uppercase;
+}
+.header nav .homepage {
+  font-family: "Roboto-Medium";
+}
+.header nav .about,
+.header nav .works,
+.header nav .process,
+.header nav .contacts {
+  font-family: "Roboto-Regular";
+}
+.header nav .homepage:hover,
+.header nav .about:hover,
+.header nav .works:hover,
+.header nav .process:hover,
+.header nav .contacts:hover {
+  cursor: pointer;
+  color: #34547a;
+}
+.header .main-header {
+  padding-bottom: 8.813rem;
+}
+.header .main-header .title {
+  padding-bottom: 3.75rem;
+  font-family: "Roboto-Medium";
+  font-size: 3rem;
+  line-height: 78.75px;
+}
+.header .main-header .description {
+  max-width: 540px;
+  padding-bottom: 4.063rem;
+  font-family: "Roboto-Regular";
+  color: #727272;
+  line-height: 26.25px;
+}
+.header .main-header .btn {
+  background-color: #34547a;
+  max-width: 225px;
+  padding: 20px 0;
+  color: #ffffff;
+  font-family: "Roboto-Regular";
+  line-height: 26.25px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.header .main-header .btn:hover {
+  cursor: pointer;
+  color: #cccccc;
+  transition: 0.3s;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.main {
+  max-width: 100%;
+}
+.main .section-about .container {
+  padding-top: 7rem;
+  padding-bottom: 6.25rem;
+}
+.main .section-about .main-title {
+  font-family: "Roboto-Medium";
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  line-height: 37.5px;
+  padding-bottom: 50px;
+}
+.main .section-about .small-text {
+  font-family: "Roboto-Regular";
+  color: #727272;
+  max-width: 530px;
+  margin: 0 auto;
+  text-align: center;
+}
+.main .project {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  background-color: #34547a;
+}
+.main .project .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main .project .card {
+  display: flex;
+}
+.main .project .card .main-text {
+  color: white;
+  padding-left: 20px;
+  padding-top: 2px;
+  font-size: 21px;
+}
+.main .project .card .main-text .number {
+  font-family: "Roboto-Medium";
+}
+.main .project .card .main-text .text {
+  font-family: "Roboto-Regular";
+}
+.main .video-section {
+  padding-bottom: 100px;
+}
+.main .video-section .video-text {
+  display: flex;
+  flex-direction: column;
+}
+.main .video-section .video-text .video-title {
+  font-family: "Roboto-Medium";
+  line-height: 37.5px;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  padding-top: 6.25rem;
+  padding-bottom: 3.125rem;
+}
+.main .video-section .video-text .video-description {
+  font-family: "Roboto-Regular";
+  color: #727272;
+  max-width: 540px;
+  padding-bottom: 3.563rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.main .video-section .video-text .video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.footer {
+  background-color: #34547a;
+  color: white;
+}
+.footer .footer-text {
+  padding: 3.125rem 0;
+}
+.footer .footer-title {
+  font-family: "Roboto-Medium";
+  font-size: 1.313rem;
+  line-height: 24.61px;
+  padding-bottom: 1.25rem;
+}
+.footer .footer-text1 {
+  font-family: "Roboto-Regular";
+  line-height: 21.33px;
+  font-size: 0.813rem;
+}/*# sourceMappingURL=styles.css.map */
