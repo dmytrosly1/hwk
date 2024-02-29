@@ -37,6 +37,14 @@
   }
 }
 
+.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
 .first-section {
   .tab-pane {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
