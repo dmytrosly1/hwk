@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.tabs-section button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif, "Times New Roman", Times, serif;
+  color: rgb(103, 103, 103);
+  font-size: 21px;
+  position: relative;
+  background-color: white;
+  border-color: white;
+  padding: 10px 20px;
+  display: flex;
+  margin: 0 auto;
+  border: 0;
+  cursor: pointer;
+}
+.tabs-section .buttoncolor {
+  color: black;
+  background-color: #eaeaea;
+}
+.tabs-section .bbottom {
+  border: none;
+  border-bottom: 2px solid rgb(184, 184, 184);
+}
+.tabs-section .nav-link:hover {
+  background-color: rgb(222, 222, 222);
+  color: rgb(60, 60, 60);
+  transition: 0.5s;
+}
+.tabs-section .nav-tabs {
+  display: flex;
+}
+
+.first-section .tab-pane {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 22px;
+  padding-left: 6px;
+  padding-top: 10px;
+}
+
+.fade {
+  display: none;
+}/*# sourceMappingURL=styles.css.map */

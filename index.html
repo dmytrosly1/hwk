@@ -1,22 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Tabs</title>
   </head>
   <body>
-    <div class="ons">
-      <h1>Homework</h1>
-      <p>First command: git version</p>
-      <p>Second command: git log</p>
-      <p>Third command: git status</p>
-      <p>Fourth command: git add .</p>
-      <p>Fifth command: git commit -m</p>
-      <p>Sixth command: git push origin</p>
-      <p>Seventh command: git checkout -b update-template</p>
-    </div>
-    <a href="gallery.html" class="home">Gallery</a>
+    <main>
+      <section class="tabs-section">
+        <div class="nav nav-tabs bbottom" id="nav-tab " role="tablist">
+          <div class="border">
+            <button
+              class="nav-link navlink1 active"
+              id="nav-home"
+              data-target="#tab-home"
+              type="button"
+              role="tab"
+            >
+              Home
+            </button>
+          </div>
+          <div class="border">
+            <button
+              class="nav-link navlink2"
+              id="nav-profile"
+              data-target="#tab-profile"
+              type="button"
+              role="tab"
+            >
+              Profile
+            </button>
+          </div>
+          <div class="border">
+            <button
+              class="nav-link navlink3"
+              id="nav-contact"
+              data-target="#tab-contact"
+              type="button"
+              role="tab"
+            >
+              Contact
+            </button>
+          </div>
+          <div class="border">
+            <button
+              class="nav-link navlink4"
+              id="nav-delivery"
+              data-target="#tab-delivery"
+              type="button"
+              role="tab"
+            >
+              Delivery
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="py-rem first-section">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane active tab-home" id="tab-home" role="tabpanel">
+            Home tab content
+          </div>
+          <div class="tab-pane fade" id="tab-profile" role="tabpanel">
+            Profile tab content
+          </div>
+          <div class="tab-pane fade" id="tab-contact" role="tabpanel">
+            Contact tab content
+          </div>
+          <div class="tab-pane fade" id="tab-delivery" role="tabpanel">
+            Delivery tab content
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./jQuery/jquery-3.7.1.min.js"></script>
+    <script src="js/file.js"></script>
   </body>
 </html>
