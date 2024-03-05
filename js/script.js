@@ -1,8 +1,8 @@
-function getUserInfo() {
-  let name = prompt("Напишіть своє ім’я: ").trim();
-  let age = Number(prompt("Напишіть свій вік: "));
-  const smoke = confirm("Чи курите ви?");
+let name = prompt("Напишіть своє ім’я: ").trim();
+let age = Number(prompt("Напишіть свій вік: "));
+const smoke = confirm("Чи курите ви?");
 
+function getUserInfo() {
   while (name === "") {
     name = prompt("Помилка! Напишіть своє ім’я ще раз.").trim();
   }
