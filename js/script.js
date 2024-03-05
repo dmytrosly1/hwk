@@ -21,8 +21,7 @@ function getUserInfo() {
   } else if (age > 18 && smoke === true) {
     alert(`Що ж ${name}, це твій вибір. Але я не радив би курити`);
   }
-
-  console.log(name, age, smoke);
 }
+console.log(name, age, smoke);
 
 getUserInfo();
