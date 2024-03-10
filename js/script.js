@@ -9,7 +9,7 @@ function getUserInfo() {
 
   age = Number(prompt("Напишіть свій вік: "));
 
-  while (isNaN(age) || age === "" || age === null || age > 105 || age < 12) {
+  while (isNaN(age) || age === "" || age === null || age > 105 || age < 6) {
     age = prompt("Помилка, неможливе значення віку. Напишіть свій вік ще раз.");
     age = Number(age);
   }
