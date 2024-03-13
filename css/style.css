@@ -4,19 +4,25 @@
   box-sizing: border-box;
 }
 
+/* ///////////////////////////// */
+
 header {
   background-color: rgb(56, 56, 56);
-  border-bottom: 0.5rem solid rgb(0, 172, 230);
 }
 
 .container {
+  display: flex;
   max-width: 1110px;
   margin: 0 auto;
+  padding: 0 1rem;
+}
 
-  padding: 1rem;
+.head {
+  display: flex;
 }
 
 .head a {
+  display: inline-block;
   text-transform: uppercase;
   padding: 1.5rem;
   color: rgb(255, 255, 255);
@@ -26,5 +32,81 @@ header {
 
 .head a:hover {
   background-color: rgb(0, 172, 230);
-  transition: 0.5s;
+  transition: 0.2s;
+  cursor: pointer;
 }
+
+.product:hover {
+  background-color: rgb(0, 172, 230);
+  cursor: pointer;
+}
+
+.product {
+  position: relative; /* Додаємо позиціонування для встановлення контексту для .menu-second */
+}
+
+/* ///////////////////////////// */
+
+.menu {
+  display: none;
+  position: absolute;
+  text-align: center;
+  text-transform: lowercase;
+  font-size: 0.8rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.product:hover .menu {
+  display: block;
+  text-transform: lowercase;
+  flex-direction: column;
+  background-color: rgb(55, 196, 244);
+}
+
+/* ///////////////////////////// */
+
+.first-menu a {
+  min-width: 12rem;
+  text-align: left;
+}
+
+.menu-first {
+  text-align: left;
+  min-width: 10rem;
+  display: none;
+  position: absolute;
+  text-transform: lowercase;
+  flex-direction: column;
+  background-color: rgb(51, 164, 201);
+
+  top: 0;
+  left: 100%;
+}
+
+.first-menu:hover .menu-first {
+  display: flex;
+}
+
+/* ///////////////////////////// */
+
+.second-menu a {
+  min-width: 12rem;
+  text-align: left;
+}
+
+.menu-second {
+  min-width: 10rem;
+  display: none;
+  position: absolute;
+  text-transform: lowercase;
+  flex-direction: column;
+  background-color: rgb(51, 164, 201);
+  top: 50%;
+  left: 100%;
+}
+
+.second-menu:hover .menu-second {
+  display: flex;
+}
+
+/* ///////////////////////////// */
