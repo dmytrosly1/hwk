@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* ///////////////////////////// */
+/* /////////////////////////////////////////////////// */
 
 header {
   background-color: rgb(56, 56, 56);
@@ -42,10 +42,18 @@ header {
 }
 
 .product {
-  position: relative; /* Додаємо позиціонування для встановлення контексту для .menu-second */
+  position: relative;
 }
 
-/* ///////////////////////////// */
+.product:hover .menu {
+  display: block;
+}
+
+/* /////////////////////////////////////////////////// */
+
+.menu {
+  background-color: rgb(0, 172, 230);
+}
 
 .menu {
   display: none;
@@ -56,57 +64,45 @@ header {
   font-family: "Times New Roman", Times, serif;
 }
 
-.product:hover .menu {
-  display: block;
-  text-transform: lowercase;
-  flex-direction: column;
-  background-color: rgb(55, 196, 244);
+.menu a:hover {
+  background-color: rgb(15, 187, 244);
 }
 
-/* ///////////////////////////// */
-
-.first-menu a {
-  min-width: 12rem;
-  text-align: left;
+.menu div {
+  position: relative;
 }
 
-.menu-first {
-  text-align: left;
-  min-width: 10rem;
+.menu div div {
   display: none;
   position: absolute;
-  text-transform: lowercase;
-  flex-direction: column;
-  background-color: rgb(51, 164, 201);
-
   top: 0;
   left: 100%;
 }
 
-.first-menu:hover .menu-first {
+.menu div:hover div {
   display: flex;
+  flex-direction: column;
 }
 
-/* ///////////////////////////// */
-
-.second-menu a {
+.menu a {
   min-width: 12rem;
   text-align: left;
 }
 
-.menu-second {
-  min-width: 10rem;
-  display: none;
-  position: absolute;
-  text-transform: lowercase;
-  flex-direction: column;
-  background-color: rgb(51, 164, 201);
-  top: 50%;
+.first-menu .menu-first,
+.second-menu .menu-second,
+.third-menu .menu-third,
+.fourth-menu .menu-fourth {
+  background-color: rgb(0, 172, 230);
+  top: 0;
   left: 100%;
 }
 
-.second-menu:hover .menu-second {
-  display: flex;
+.menu-first a:hover,
+.menu-second a:hover,
+.menu-third a:hover,
+.menu-fourth a:hover {
+  background-color: rgb(15, 187, 244);
 }
 
-/* ///////////////////////////// */
+/* /////////////////////////////////////////////////// */
