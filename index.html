@@ -2,51 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
       <div class="container">
-        <div class="head">
-          <a href="#">Home</a>
-          <div class="product">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="main-menu">
             <a href="#">Products</a>
-            <div class="menu">
-              <div class="first-menu">
-                <a href="#">Product 1</a>
-                <div class="menu-first">
-                  <a href="#">Product 1</a>
-                  <a href="#">Product 2</a>
-                </div>
-              </div>
-              <div class="second-menu">
+            <ul class="secondary-menu">
+              <li><a href="#">Product 1</a></li>
+              <li class="main-menu">
                 <a href="#">Product 2</a>
-                <div class="menu-second">
-                  <a href="#">Product 1</a>
-                  <a href="#">Product 2</a>
-                </div>
-              </div>
-              <div class="third-menu">
-                <a href="#">Product 3</a>
-                <div class="menu-third">
-                  <a href="#">Product 1</a>
-                  <a href="#">Product 2</a>
-                </div>
-              </div>
-              <div class="fourth-menu">
-                <a href="#">Product 4</a>
-                <div class="menu-fourth">
-                  <a href="#">Product 1</a>
-                  <a href="#">Product 2</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-        </div>
+                <ul class="secondary-menu">
+                  <li><a href="#">Product1</a></li>
+                  <li><a href="#">Product2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">About </a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
     </header>
   </body>
