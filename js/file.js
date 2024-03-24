@@ -10,6 +10,25 @@ const sub = sorted.slice(0, 16);
 
 console.log(sub);
 
+const cardTitle = document.querySelectorAll(".card-title");
+
+for (let i = 0; i < sub.length; i++) {
+  cardTitle[i].textContent = sub[i].title;
+}
+
+const cardText = document.querySelectorAll(".card-text");
+
+for (let i = 0; i < sub.length; i++) {
+  cardText[i].textContent = sub[i].extract;
+}
+
+const cardImage = document.querySelectorAll(".card-img-top");
+
+for (let i = 0; i < sub.length; i++) {
+  cardImage[i].setAttribute("src", sub[i].thumbnail);
+  cardImage[i].setAttribute("alt", sub[i].title);
+}
+
 //
 
 // second task

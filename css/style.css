@@ -1,23 +1,11 @@
-.home {
-  width: 200px;
-  background-color: #aaa;
-  padding: 10px 50px 10px 50px;
-  border-radius: 10px;
-  text-decoration: none;
-  position: relative;
-  text-align: center;
-  align-items: center;
-  left: 680px;
-  color: white;
-  top: 40px;
+.card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-.ons {
-  text-align: center;
-  font-size: 24px;
-}
-
-.home:hover {
-  background-color: #c1c1c1;
-  color: #818181;
+.card-img-top {
+  max-width: 25rem;
+  max-height: 20rem;
 }
